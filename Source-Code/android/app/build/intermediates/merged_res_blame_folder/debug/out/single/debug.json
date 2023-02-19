@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/drawable-xhdpi_launch_screen.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/drawable-xhdpi/launch_screen.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/drawable_rn_edit_text_material.xml.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-ldpi_ic_launcher.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/drawable-hdpi_launch_screen.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/drawable-hdpi/launch_screen.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/drawable-mdpi_launch_screen.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/drawable-mdpi/launch_screen.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/drawable-xxxhdpi_launch_screen.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/drawable-xxxhdpi/launch_screen.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/drawable-xxhdpi_launch_screen.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/drawable-xxhdpi/launch_screen.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/layout_launch_screen.xml.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/layout/launch_screen.xml"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-merged_res-38:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/wadedesir/.gradle/daemon/7.5.1/com.chitchatapp-main-40:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    }
+]
