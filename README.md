@@ -1,6 +1,6 @@
-# Welcome to the ChitChat Mobile Repo!
+# Welcome to the ChitChat GitLab!
 
-This is where the source code for the ChitChat mobile version will be stored and shared with developers on the team.
+This is where the source code for ChitChat will be stored and shared with developers on the team.
 
 ## Installation:
 
@@ -24,7 +24,10 @@ This is where the source code for the ChitChat mobile version will be stored and
 2. run `npm install`
 3. run `npm run android`
 
+## Authors and acknowledgment
+
+Jake Brown, Kushagra Mallick, Rahul Rajendran, Jason Xiong, Wade Desir
 
 ## License
 
-Copyright ChitChat Social LLC
+Copyright ChitChat
