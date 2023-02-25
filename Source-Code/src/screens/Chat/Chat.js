@@ -32,9 +32,12 @@ import sendButton from '../../assets/Images/SendButton.png';
 
 export const Chat = ({ navigation, route }) => {
   const { chatUser, thread, newGroup } = route.params;
+  
+  // Initialize threadId with the thread prop passed via route.params
   const [threadId, setThreadId] = useState(thread);
   const user = auth().currentUser;
 
+  // Initialize messages, chatbox, groupName, selectedUsers, filteredUsers, and insets state variables
   const [messages, setMessages] = useState([]);
   const [chatbox, setChatbox] = useState('');
   const [groupName, setGroupName] = useState(route.params.groupName);
@@ -42,8 +45,8 @@ export const Chat = ({ navigation, route }) => {
   const [filteredUsers, setFilteredUsers] = useState([]);
   const insets = useSafeAreaInsets();
 
+  // When the component mounts and threadId changes, update the "lastseen" field in the thread document
   useEffect(() => {
-    // Update the "lastseen" field in the thread document when the component mounts
     if (threadId) {
       firestore()
         .collection('THREADS')
@@ -57,8 +60,8 @@ export const Chat = ({ navigation, route }) => {
     }
   }, [threadId]);
 
+  // Function to handle sending messages
   async function handleSend(messages = []) {
-    // Get the text of the message to send
     const text = messages[0].text;
 
     if (chatbox == '') {
@@ -107,8 +110,4 @@ export const Chat = ({ navigation, route }) => {
       // Set the chatbox state to the new thread ID
       setChatbox(docRef.id);
 
-      // Add the message to the new thread
-      await docRef.collection('MESSAGES').add({
-        message: text,
-        created: new Date().getTime(),
-        user
+      //
