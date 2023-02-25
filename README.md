@@ -26,7 +26,7 @@ This is where the source code for ChitChat will be stored and shared with develo
 
 ## Authors and acknowledgment
 
-Jake Brown, Kushagra Mallick, Rahul Rajendran, Jason Xiong, Wade Desir
+Nigel Phillips, Jake Brown, Kushagra Mallick, Rahul Rajendran, Jason Xiong, Wade Desir
 
 ## License
 
