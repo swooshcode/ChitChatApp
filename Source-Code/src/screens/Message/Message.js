@@ -49,4 +49,16 @@ const Message = ({ navigation }) => {
     await notifee.displayNotification({
       title: `${message.title}`,
       body: `${message.body}`,
+    })
      
+//have someone add your account before you can message them
+function addAccount(user) {
+  // Check if user is already added
+  if (user.isAdded) {
+    // If user is already added, allow them to message you
+    console.log('You can now message ' + user.name);
+  } else {
+    // If not, prompt them to add your account first
+    console.log('Please add ' + user.name + ' before messaging them.');
+  }
+}
