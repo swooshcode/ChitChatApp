@@ -30,14 +30,12 @@ import { Header } from '@components/Header/Header';
 
 import sendButton from '../../assets/Images/SendButton.png';
 
-export const Chat = ({ navigation, route }) => {
+const Chat = ({ navigation, route }) => {
   const { chatUser, thread, newGroup } = route.params;
-  
-  // Initialize threadId with the thread prop passed via route.params
+
   const [threadId, setThreadId] = useState(thread);
   const user = auth().currentUser;
 
-  // Initialize messages, chatbox, groupName, selectedUsers, filteredUsers, and insets state variables
   const [messages, setMessages] = useState([]);
   const [chatbox, setChatbox] = useState('');
   const [groupName, setGroupName] = useState(route.params.groupName);
@@ -45,7 +43,6 @@ export const Chat = ({ navigation, route }) => {
   const [filteredUsers, setFilteredUsers] = useState([]);
   const insets = useSafeAreaInsets();
 
-  // When the component mounts and threadId changes, update the "lastseen" field in the thread document
   useEffect(() => {
     if (threadId) {
       firestore()
@@ -60,12 +57,10 @@ export const Chat = ({ navigation, route }) => {
     }
   }, [threadId]);
 
-  // Function to handle sending messages
-  async function handleSend(messages = []) {
+  const handleSend = async (messages = []) => {
     const text = messages[0].text;
 
-    if (chatbox == '') {
-      // If there is no existing chatbox (i.e. this is a new chat), create a new thread
+    if (chatbox === '') {
       const mapped = [selectedUsers.map((item) => item.label)];
 
       if (selectedUsers.length >= 2) {
@@ -74,7 +69,6 @@ export const Chat = ({ navigation, route }) => {
 
       const strName = mapped.join(', ');
 
-      // Add the new thread to the "THREADS" collection in Firestore
       const docRef = await firestore()
         .collection('THREADS')
         .add({
@@ -103,11 +97,78 @@ export const Chat = ({ navigation, route }) => {
           ],
         });
 
-      // Set the new thread ID and update the "newGroup" state
       setThreadId(docRef.id);
       setNewGroup(false);
 
-      // Set the chatbox state to the new thread ID
       setChatbox(docRef.id);
+    } else {
+      firestore()
+        .collection('THREADS')
+        .doc(chatbox)
+        .update({
+          latestMessage: {
+            text: text,
+            created: new Date().getTime(),
+            userid: user.uid.toString(),
+            username: user.email,
+          },
+        });
+    }
 
-      //
+    await firestore()
+      .collection('THREADS')
+      .doc(chatbox)
+      .collection('MESSAGES')
+      .add({
+        text: text,
+        createdAt: new Date().getTime(),
+        user: {
+          _id: user.uid.toString(),
+          name: user.displayName,
+          avatar: user.photoURL,
+        },
+      });
+    };
+  
+    const handleChange = (text) => {
+      setChatbox(text);
+    };
+  
+    const renderMessageText = (props) => {
+      return (
+        <View>
+          <Text style={{ color: '#000' }}>{props.currentMessage.text}</Text>
+        </View>
+      );
+    };
+  
+    const renderSend = (props) => {
+      return (
+        <Send {...props}>
+          <View style={{ marginRight: 10, marginBottom: 5 }}>
+            <Image source={sendButton} />
+          </View>
+        </Send>
+      );
+    };
+  
+    const renderInputToolbar = (props) => {};
+  
+    const renderBubble = (props) => {};
+  
+    return (
+      <View style={{ flex: 1 }}>
+        <Header title={groupName} />
+  
+        <GiftedChat messages={messages} onSend={handleSend} user={{ _id: user.uid }} />
+  
+        <InputToolbar containerStyle={{ backgroundColor: '#f5f5f5' }} />
+  
+        <RenderMessageTextProps textStyle={{ color: '#000' }} />
+  
+        <Bubble wrapperStyle={{ left: { backgroundColor: '#f5f5f5' } }} />
+  
+        <Send containerStyle={{ marginRight: 10, marginBottom: 5 }} />
+  
+        {Platform.OS === 'android' && Platform.Version >= 21 && ( // android version check for ripple effect on send button in gifted chat component.
+          // Ripple effect is supported from android version 21 and above. So this code will only run if the android version is greater than or equal to 21. If the android version is lower than 21 then ripple effect will not be applied to the send button in gifted chat component.
