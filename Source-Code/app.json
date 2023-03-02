@@ -1,4 +1,4 @@
-{
-  "name": "chitChatApp",
-  "displayName": "chitChatApp"
-}
+const chitChatApp = {
+  name: "chitChatApp",
+  displayName: "chitChatApp"
+};
