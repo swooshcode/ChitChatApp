@@ -15,12 +15,12 @@ export const styles = StyleSheet.create({
     marginRight:101
   },
   backArrow: {
-    marginLeft:5,
-    marginTop:-3,
-    padding:15
+    marginLeft: 5,
+    marginTop: 0, // Updated marginTop to 0
+    padding: 15,
   },
   menu: {
-  marginTop:2
+    marginTop: 2,
   },
   video: {
     marginTop: 10,
@@ -32,6 +32,7 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     top: 130,
     right: 15,
+    marginRight: 5, // Added marginRight to position the element correctly
   },
   videoMenuImg: {
     height: appTheme.ALIGNMENT.hp(3.5),
@@ -50,26 +51,30 @@ export const styles = StyleSheet.create({
     width:appTheme.ALIGNMENT.wp('75%') 
     
   },
-  // callChat: {
-  //   position: 'absolute',
-  //   bottom: 32,
-  //   left: 44,
-  // },
-  // speaker: {
-  //   position: 'absolute',
-  //   bottom: 32,
-  //   left: 115,
-  // },
-  // voice: {
-  //   position: 'absolute',
-  //   bottom: 32,
-  //   left: 188,
-  // },
-  // endCall: {
-  //   position: 'absolute',
-  //   bottom: 32,
-  //   right: 43,
-  // },
+  callChat: {
+    position: 'absolute',
+    bottom: 32,
+    left: 44,
+    marginLeft: 5, // Added marginLeft to position the element correctly
+  },
+  speaker: {
+    position: 'absolute',
+    bottom: 32,
+    left: 115,
+    marginLeft: 5, // Added marginLeft to position the element correctly
+  },
+  voice: {
+    position: 'absolute',
+    bottom: 32,
+    left: 188,
+    marginLeft: 5, // Added marginLeft to position the element correctly
+  },
+  endCall: {
+    position: 'absolute',
+    bottom: 32,
+    right: 43,
+    marginRight: 5, // Added marginRight to position the element correctly
+  },
   memberCon: {
     marginTop: 25,
   },

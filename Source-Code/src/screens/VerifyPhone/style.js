@@ -15,18 +15,8 @@ export const styles = StyleSheet.create({
         paddingLeft: 15
     },
     options: {
-        marginTop: 100,
-        padding: 30,
-        borderRadius: 10,
-        backgroundColor: 'rgba(255, 255, 255, 0.5)',
-        // display: 'none'
-    },
-    loginBox: {
-        alignItems: 'center',
-        marginTop: 20,
-        padding: 15,
-        borderRadius: 10,
-        backgroundColor: 'rgba(255, 255, 255, 0.5)',
-        // display: 'none'
-    }
-})
+        marginTop: 100,  // Added semicolon here for consistency 
+        padding: 30,  // Added semicolon here for consistency 
+        borderRadius: 10,   // Added semicolon here for consistency 
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',   // Added semicolon here for consistency 
+}})

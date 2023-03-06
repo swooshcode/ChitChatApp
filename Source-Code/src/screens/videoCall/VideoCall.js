@@ -3,10 +3,10 @@ import {Image, ScrollView, View} from 'react-native';
 import {styles} from './style';
 import Images from '../../Utils/Images';
 
-import TextComponent from '@components/textComponent/TextComponent';
-import GradientComponent from '@components/Gradientcontainer/GradientContainer';
-import ImageBtn from '@components/imageBtn/ImageBtn';
-import Member from '@components/member/Member';
+import TextComponent from '../../components/textComponent/TextComponent';
+import GradientComponent from '../../components/GradientContainer/GradientContainer';
+import ImageBtn from '../../components/imageBtn/ImageBtn';
+import Member from '../../components/member/Member';
 
 export default function VideoCall({navigation}) {
   const back = () => {

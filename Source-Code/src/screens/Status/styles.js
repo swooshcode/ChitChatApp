@@ -1,6 +1,7 @@
 import {StyleSheet} from 'react-native';
 import {heightPercentageToDP} from 'react-native-responsive-screen';
 import appTheme, {ALIGNMENT} from '../../constants/theme';
+import {Fonts} from '../../constants/fonts';
 
 export default StyleSheet.create({
   container: {
@@ -30,18 +31,17 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   smallText: {
-    fontFamily: 'Poppins-Bold',
-    // fontStyle: 'normal',
+    fontFamily: Fonts.PoppinsBold,
+    fontStyle: 'normal',
     fontWeight: '300',
     fontSize: 10,
-
     color: '#FFFFFF',
     marginTop: 27,
     marginLeft: 5,
   },
   largeText: {
-    fontFamily: 'Poppins-Bold',
-    // fontStyle: 'normal',
+    fontFamily: Fonts.PoppinsBold,
+    fontStyle: 'normal',
     fontWeight: '500',
     fontSize: 12,
     color: '#FFFFFF',
@@ -56,5 +56,6 @@ export default StyleSheet.create({
     borderColor: 'pink',
     borderWidth: 2,
     borderRadius: 20,
+    resizeMode: 'contain',
   },
 });

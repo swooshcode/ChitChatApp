@@ -1,3 +1,5 @@
+#import <React/RCTBridgeModule.h>  // Added this line
+#import <React/RCTSharedApplication.h>
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
@@ -28,6 +30,7 @@
 
 - (void)testRendersWelcomeScreen
 {
+  RCTSharedApplication([UIApplication sharedApplication].delegate)
   UIViewController *vc = [[[RCTSharedApplication() delegate] window] rootViewController];
   NSDate *date = [NSDate dateWithTimeIntervalSinceNow:TIMEOUT_SECONDS];
   BOOL foundElement = NO;

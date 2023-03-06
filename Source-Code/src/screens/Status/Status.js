@@ -24,16 +24,15 @@ const Status = () => {
           <ProgressBar progress={1} width={appTheme.ALIGNMENT.wp('30%')} />
         </View>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          {/* <ImageIcon
+          <Image
             style={{
               marginLeft: 30,
               marginTop: 15,
               height: 45,
               width: 45,
             }}
-            imgstyle={{width: 42, height: 42}}
-            src={Images.img1}
-          /> */}
+            source={Images.img1}
+          />
 
           <Image style={styles.statusImage} source={Images.img1} />
           <Text style={styles.largeText}>Unarshia</Text>
@@ -60,4 +59,5 @@ const Status = () => {
     </View>
   );
 };
+
 export default Status;
