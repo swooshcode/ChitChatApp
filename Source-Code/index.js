@@ -11,8 +11,15 @@ import 'react-native-gesture-handler';
 
 // Initialize Firebase
 const firebaseConfig = {
-  // Your Firebase config here
-};
+  apiKey: "AIzaSyDdl1Y6csCHcWeG-2Ij4s3rgoDjU10o6D8",
+  authDomain: "chitchat-ab74c.firebaseapp.com",
+  databaseURL: "https://chitchat-ab74c-default-rtdb.firebaseio.com",
+  projectId: "chitchat-ab74c",
+  storageBucket: "chitchat-ab74c.appspot.com",
+  messagingSenderId: "67212759619",
+  appId: "1:67212759619:web:877146c2c993315a94baf6",
+  measurementId: "G-VN4M7Q90L8"
+};  
 firebase.initializeApp(firebaseConfig);
 
 // Request user permission for notifications
