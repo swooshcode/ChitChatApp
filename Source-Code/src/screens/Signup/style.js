@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    container:{
-        alignItems:'center',
-        marginTop:80
+    container: {
+        flex: 1,
+        backgroundColor: '#E5E5E5'
     },
     appLogo: {
         width: 100,
@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
         padding: 30,
         borderRadius: 10,
         backgroundColor: 'rgba(255, 255, 255, 0.5)',
-        // display: 'none'
+        display: 'flex'
     },
     loginBox: {
         alignItems: 'center',
@@ -27,11 +27,16 @@ export const styles = StyleSheet.create({
         padding: 15,
         borderRadius: 10,
         backgroundColor: 'rgba(255, 255, 255, 0.5)',
-        // display: 'none'
+        display: 'flex'
     },
-    profilePic: {
-        width: '100%',
-        height: '100%'
+    profileImg: {
+        height: 170,
+        width: 170,
+        marginTop: 100,
+        marginBottom: 50,
+        borderWidth: 4,
+        borderColor: '#2796C3',
+        borderRadius: 100
     },
     profileContainer: {
         alightitems: 'center',
