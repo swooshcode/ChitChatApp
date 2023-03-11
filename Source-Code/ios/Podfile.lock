@@ -662,7 +662,7 @@ PODS:
     - "gRPC-C++ (~> 1.44.0)"
     - leveldb-library (~> 1.22)
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - FirebaseInstallations (10.3.0):
+  - FirebaseInstallations (10.6.0):
     - FirebaseCore (~> 10.0)
     - GoogleUtilities/Environment (~> 7.8)
     - GoogleUtilities/UserDefaults (~> 7.8)
@@ -684,7 +684,7 @@ PODS:
     - GTMSessionFetcher/Core (< 4.0, >= 2.1)
   - fmt (6.2.1)
   - glog (0.3.5)
-  - GoogleDataTransport (9.2.0):
+  - GoogleDataTransport (9.2.1):
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
@@ -779,7 +779,7 @@ PODS:
     - RNPermissions
   - Permission-PhotoLibraryAddOnly (3.6.1):
     - RNPermissions
-  - PromisesObjC (2.1.1)
+  - PromisesObjC (2.2.0)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -1089,15 +1089,15 @@ PODS:
   - RNFBApp (16.7.0):
     - Firebase/CoreOnly (= 10.3.0)
     - React-Core
-  - RNFBAuth (16.5.0):
+  - RNFBAuth (16.7.0):
     - Firebase/Auth (= 10.3.0)
     - React-Core
     - RNFBApp
-  - RNFBDatabase (16.5.0):
+  - RNFBDatabase (16.7.0):
     - Firebase/Database (= 10.3.0)
     - React-Core
     - RNFBApp
-  - RNFBFirestore (16.5.0):
+  - RNFBFirestore (16.7.0):
     - Firebase/Firestore (= 10.3.0)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - React-Core
@@ -1107,16 +1107,11 @@ PODS:
     - FirebaseCoreExtension (= 10.3.0)
     - React-Core
     - RNFBApp
-  - RNFBStorage (16.5.0):
+  - RNFBStorage (16.7.0):
     - Firebase/Storage (= 10.3.0)
     - React-Core
     - RNFBApp
   - RNGestureHandler (2.8.0):
-    - React-Core
-  - RNNotifee (7.3.0):
-    - React-Core
-    - RNNotifee/NotifeeCore (= 7.3.0)
-  - RNNotifee/NotifeeCore (7.3.0):
     - React-Core
   - RNPermissions (3.6.1):
     - React-Core
@@ -1184,7 +1179,6 @@ DEPENDENCIES:
   - "RNFBMessaging (from `../node_modules/@react-native-firebase/messaging`)"
   - "RNFBStorage (from `../node_modules/@react-native-firebase/storage`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
-  - "RNNotifee (from `../node_modules/@notifee/react-native`)"
   - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
@@ -1321,8 +1315,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-firebase/storage"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
-  RNNotifee:
-    :path: "../node_modules/@notifee/react-native"
   RNPermissions:
     :path: "../node_modules/react-native-permissions"
   RNScreens:
@@ -1353,12 +1345,12 @@ SPEC CHECKSUMS:
   FirebaseCoreInternal: 29b76f784d607df8b2a1259d73c3f04f1210137b
   FirebaseDatabase: d0732ba8aece0eccfa0cfb3ef540e7ba6fa1c6a6
   FirebaseFirestore: 244f71ff14ef44f39e00b44d356eac708ce03103
-  FirebaseInstallations: e2f26126089dcf41e215f7b8925af8d953c7d602
+  FirebaseInstallations: 13dde135fa0524e15bddb133ccc8465c53a1b3f3
   FirebaseMessaging: e345b219fd15d325f0cf2fef28cb8ce00d851b3f
   FirebaseStorage: 0efbff0ac978981866d89804191688ae50d64033
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
-  GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
+  GoogleDataTransport: ea169759df570f4e37bdee1623ec32a7e64e67c4
   GoogleUtilities: bad72cb363809015b1f7f19beb1f1cd23c589f95
   "gRPC-C++": 9675f953ace2b3de7c506039d77be1f2e77a8db2
   gRPC-Core: 943e491cb0d45598b0b0eb9e910c88080369290b
@@ -1372,7 +1364,7 @@ SPEC CHECKSUMS:
   Permission-Contacts: 2484d274171688b1ca80978b949ac771259b51f0
   Permission-PhotoLibrary: 5b34ca67279f7201ae109cef36f9806a6596002d
   Permission-PhotoLibraryAddOnly: 6dba8924024e239af2e282daa8a88967679b4983
-  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   RCT-Folly: 0080d0a6ebf2577475bda044aa59e2ca1f909cda
   RCTRequired: e1866f61af7049eb3d8e08e8b133abd38bc1ca7a
   RCTTypeSafety: 27c2ac1b00609a432ced1ae701247593f07f901e
@@ -1406,13 +1398,12 @@ SPEC CHECKSUMS:
   ReactCommon: 349be31adeecffc7986a0de875d7fb0dcf4e251c
   RNCMaskedView: bc0170f389056201c82a55e242e5d90070e18e5a
   RNFBApp: 1ee535dcb7773ca612d3a2e53a1f78f8f2fb6abf
-  RNFBAuth: 0d480b9223fd9832e8a7ed314fa8c223b7ec8dfd
-  RNFBDatabase: 3f5b2f3789c5eb0e3bdc8f6c754121416975d563
-  RNFBFirestore: edaf1440a183aefcb887dc5ccee963b5c2a286f7
+  RNFBAuth: 58ab8f774f9ff45707f2bfbf4fd74e8f7b4220b9
+  RNFBDatabase: 97c0b0cba59534afed4cd9c0dc3c0d84dda16e73
+  RNFBFirestore: 4fcf5ea5a3c8db867a5fc789322fb7abf53a7652
   RNFBMessaging: 04ecf12bae7543cd8df145f1b26d89d867594be7
-  RNFBStorage: cce752c3adefd5a9a7e9df3b87ec5b8d32fc5c01
+  RNFBStorage: a587bb285b6f783e11ef16a539b697fddfaa5f6e
   RNGestureHandler: 62232ba8f562f7dea5ba1b3383494eb5bf97a4d3
-  RNNotifee: d585266dd69e1f355d26d074cbfdbdfa6c94b7d5
   RNPermissions: dcdb7b99796bbeda6975a6e79ad519c41b251b1c
   RNScreens: 34cc502acf1b916c582c60003dc3089fa01dc66d
   RNSVG: 3a79c0c4992213e4f06c08e62730c5e7b9e4dc17
@@ -1422,4 +1413,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ec57389d7b31652ce12f3a4cc93c7a755f47d9e7
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.0
